@@ -6,6 +6,11 @@ from multiprocessing import Process, Manager
 
 # 向共享缓冲栈中写入数据:
 def write(stack, top: int) -> None:
+    """
+    :param stack: Manager.list对象
+    :param top: 缓冲栈容量
+    :return: None
+    """
     print('Process to write: %s' % os.getpid())
     cap = cv2.VideoCapture(0)
     while True:
