@@ -1,5 +1,6 @@
 import os
 import cv2
+import gc
 from multiprocessing import Process, Manager
 
 
@@ -12,8 +13,10 @@ def write(stack, top: int) -> None:
         if _:
             stack.append(img)
             # 每到一定容量清空一次缓冲栈
+            # 利用gc库，手动清理内存垃圾，防止内存溢出
             if len(stack) >= top:
                 del stack[:]
+                gc.collect()
 
 
 # 在缓冲栈中读取数据:
