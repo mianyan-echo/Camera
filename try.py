@@ -41,8 +41,9 @@ def read(stack1, stack2) -> None:
 
 if __name__ == '__main__':
     # 父进程创建缓冲栈，并传给各个子进程：
-    q1 = Manager().list()
-    q2 = Manager().list()
+    manger = Manager()
+    q1 = manger.list()
+    q2 = manger.list()
     pw1 = Process(target=write, args=(q1, "rtsp://admin:Zxcvbnm123@192.168.1.102:554/ONVIFMedia", 100))
     pw2 = Process(target=write, args=(q2, "rtsp://admin:Zxcvbnm123@192.168.1.103:554/ONVIFMedia", 100))
     pr = Process(target=read, args=(q1, q2))
