@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from hwdw_x import DoubleH
 from multiprocessing import Process, Manager
 
+
 # TODO：加入进程锁
 # 向共享缓冲栈中写入数据:
 def write(stack, cam, top: int) -> None:
