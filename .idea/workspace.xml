@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9feb307b-0b03-4978-b8c0-fa609bfc49c1" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/光电小车_ALL_1.py" beforeDir="false" />
-    </list>
+    <list default="true" id="9feb307b-0b03-4978-b8c0-fa609bfc49c1" name="默认更改列表" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jc_Camera.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -36,18 +32,6 @@
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -76,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hwdw_x.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="497">
@@ -122,6 +106,7 @@
         <option value="$PROJECT_DIR$/hwdw.py" />
         <option value="$PROJECT_DIR$/try.py" />
         <option value="$PROJECT_DIR$/jc_Camera.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -360,7 +345,7 @@
       <workItem from="1553931823483" duration="11656000" />
       <workItem from="1553954878284" duration="569000" />
       <workItem from="1553955637129" duration="1582000" />
-      <workItem from="1553964581065" duration="659000" />
+      <workItem from="1553964581065" duration="1057000" />
     </task>
     <task id="LOCAL-00001" summary="多线程低延迟调用摄像头">
       <created>1553756172205</created>
@@ -432,11 +417,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553957177190</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="README">
+      <created>1553965595867</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1553965595867</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29719000" />
+    <option name="totallyTimeSpent" value="30117000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,16 +441,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="20" width="1550" height="851" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17871486" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17871486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32916668" />
-      <window_info anchor="bottom" id="Version Control" order="3" visible="true" weight="0.20055325" />
-      <window_info anchor="bottom" id="Python Console" order="4" sideWeight="0.49932975" weight="0.21438451" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.20055325" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="4" sideWeight="0.49932975" visible="true" weight="0.21438451" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.26002768" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50067025" side_tool="true" weight="0.25972223" />
       <window_info anchor="bottom" id="调试" order="7" weight="0.32780084" />
@@ -472,9 +463,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.48269895" visible="true" weight="0.21218206" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.48239437" visible="true" weight="0.21218206" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.4990619" weight="0.23190348" />
-      <window_info anchor="right" x="0" y="0" width="337" height="651" id="文档" order="5" sideWeight="0.517301" side_tool="true" visible="true" weight="0.21218206" />
+      <window_info anchor="right" x="0" y="0" width="337" height="651" id="文档" order="5" sideWeight="0.51760566" side_tool="true" visible="true" weight="0.21218206" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +519,8 @@
     <MESSAGE value="加入参数" />
     <MESSAGE value="中值滤波" />
     <MESSAGE value="加入进程锁，做到进程安全" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入进程锁，做到进程安全" />
+    <MESSAGE value="README" />
+    <option name="LAST_COMMIT_MESSAGE" value="README" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Camera$Camera.coverage" NAME="Camera Coverage Results" MODIFIED="1553756005250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
@@ -544,26 +536,6 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jc_Camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -603,6 +575,26 @@
           <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
           <folding>
             <element signature="e#115#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jc_Camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
