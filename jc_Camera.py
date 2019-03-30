@@ -5,9 +5,9 @@ from multiprocessing import Process, Manager, Lock
 
 
 # 向共享缓冲栈中写入数据:
-def write(stack, cam, top: int, lock) -> None:
+def write(stack, cam, top: int, locks) -> None:
     """
-    :param lock: 进程锁
+    :param locks: 进程锁
     :param cam: 摄像头参数
     :param stack: Manager.list对象
     :param top: 缓冲栈容量
@@ -22,7 +22,7 @@ def write(stack, cam, top: int, lock) -> None:
             # 每到一定容量清空一次缓冲栈
             # 利用gc库，手动清理内存垃圾，防止内存溢出
             if len(stack) >= top:
-                with lock:
+                with locks:
                     print("清栈")
                     del stack[:]
                     gc.collect()
@@ -44,8 +44,8 @@ def read(stack) -> None:
 if __name__ == '__main__':
     # 父进程创建缓冲栈，并传给各个子进程：
     q = Manager().list()
-    l = Lock()
-    pw = Process(target=write, args=(q, 0, 100, l))
+    lock = Lock()
+    pw = Process(target=write, args=(q, 0, 100, lock))
     pr = Process(target=read, args=(q,))
     # 启动子进程pw，写入:
     pw.start()
