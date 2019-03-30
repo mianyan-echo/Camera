@@ -1,7 +1,6 @@
 import os
 import cv2
 import gc
-import time
 from multiprocessing import Process, Manager, Lock
 
 
@@ -34,7 +33,6 @@ def write(stack, cam, top: int, lock) -> None:
 def read(stack) -> None:
     print('Process to read: %s' % os.getpid())
     while True:
-        time.sleep(0.1)
         if len(stack) != 0:
             value = stack.pop()
             cv2.imshow("img", value)

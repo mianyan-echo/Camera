@@ -1,12 +1,13 @@
 import os
 import cv2
 import gc
-from multiprocessing import Process, Manager
+from multiprocessing import Process, Manager, Lock
 
 
 # 向共享缓冲栈中写入数据:
-def write(stack, cam, top: int) -> None:
+def write(stack, cam, top: int, locks) -> None:
     """
+    :param locks: 进程锁
     :param cam: 摄像头参数
     :param stack: Manager.list对象
     :param top: 缓冲栈容量
@@ -21,8 +22,11 @@ def write(stack, cam, top: int) -> None:
             # 每到一定容量清空一次缓冲栈
             # 利用gc库，手动清理内存垃圾，防止内存溢出
             if len(stack) >= top:
-                del stack[:]
-                gc.collect()
+                with locks:
+                    print("清栈")
+                    del stack[:]
+                    gc.collect()
+                    stack.append(img)
 
 
 # 在缓冲栈中读取数据:
@@ -40,12 +44,13 @@ def read(stack1, stack2) -> None:
 
 
 if __name__ == '__main__':
+    lock = Lock()
     # 父进程创建缓冲栈，并传给各个子进程：
     manger = Manager()
     q1 = manger.list()
     q2 = manger.list()
-    pw1 = Process(target=write, args=(q1, "rtsp://admin:Zxcvbnm123@192.168.1.102:554/ONVIFMedia", 100))
-    pw2 = Process(target=write, args=(q2, "rtsp://admin:Zxcvbnm123@192.168.1.103:554/ONVIFMedia", 100))
+    pw1 = Process(target=write, args=(q1, "rtsp://admin:Zxcvbnm123@192.168.1.102:554/ONVIFMedia", 100, lock))
+    pw2 = Process(target=write, args=(q2, "rtsp://admin:Zxcvbnm123@192.168.1.103:554/ONVIFMedia", 100, lock))
     pr = Process(target=read, args=(q1, q2))
     # 启动子进程pw，写入:
     pw1.start()

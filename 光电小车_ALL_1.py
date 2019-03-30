@@ -1,15 +1,16 @@
-'''
+"""
 画出红色图形的轮廓，其中很多参数待调，计划通过TK设立滑块来实时调节参数
 找出轮廓中心点
 加入控制模块结构
-'''
+"""
 
 import cv2
 import numpy as np
 
+
 # 定义接口模块
 # 后续改写为返回True/False表明是否成功执行
-def Turn(key = 0):
+def turn(key=0):
     """
     左转右转控制模块，控制左右转电机。
     :param key: 输入接口
@@ -22,7 +23,8 @@ def Turn(key = 0):
     elif key == (-1):
         return "右转"
 
-def Go_on(key):
+
+def go_on(key):
     """
     前行后退停机控制
     :param key: 输入接口
@@ -34,6 +36,7 @@ def Go_on(key):
         return "停机"
     elif key == (-1):
         return "后退"
+
 
 cap = cv2.VideoCapture("rtsp://admin:Zxcvbnm123@192.168.1.103:554/ONVIFMedia")  # 读取摄像头
 
@@ -66,7 +69,7 @@ while True:
     # image为thresh图像，contours为轮廓点的坐标，hierarchy为轮廓索引
     # 目前为止，hierarchy属性显得非常鸡肋，因为是动态视频，每次屏幕刷新索引号都不一样，所以无法应用索引号去噪
 
-    if contours == []:
+    if not contours:
         """
         这里一定要先判断轮廓是否为空，cv2.moments()函数是不能接收空轮廓的。
         后面这里可以加上输出接口，向右转、向后退、板子收起。
