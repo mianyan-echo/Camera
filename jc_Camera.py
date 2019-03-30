@@ -5,14 +5,15 @@ from multiprocessing import Process, Manager
 
 
 # 向共享缓冲栈中写入数据:
-def write(stack, top: int) -> None:
+def write(stack, cam, top: int) -> None:
     """
+    :param cam: 摄像头参数
     :param stack: Manager.list对象
     :param top: 缓冲栈容量
     :return: None
     """
     print('Process to write: %s' % os.getpid())
-    cap = cv2.VideoCapture("rtsp://admin:Zxcvbnm123@192.168.1.102:554/ONVIFMedia")
+    cap = cv2.VideoCapture(cam)
     while True:
         _, img = cap.read()
         if _:
@@ -39,7 +40,7 @@ def read(stack) -> None:
 if __name__ == '__main__':
     # 父进程创建缓冲栈，并传给各个子进程：
     q = Manager().list()
-    pw = Process(target=write, args=(q, 100))
+    pw = Process(target=write, args=(q, "rtsp://xxx:xxx@192.168.1.102:554", 100))
     pr = Process(target=read, args=(q,))
     # 启动子进程pw，写入:
     pw.start()
