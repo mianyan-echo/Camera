@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9feb307b-0b03-4978-b8c0-fa609bfc49c1" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/find.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/光电小车_ALL_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hwdw.py" beforeDir="false" afterPath="$PROJECT_DIR$/hwdw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jc_Camera.py" beforeDir="false" afterPath="$PROJECT_DIR$/jc_Camera.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jc_Camera.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+            <state relative-caret-position="321">
+              <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -44,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/try.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
+            <state relative-caret-position="731">
               <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -57,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/hwdw.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -65,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/光电小车_ALL_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+            <state relative-caret-position="901">
+              <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
               <folding>
                 <element signature="e#63#73#0" expanded="true" />
               </folding>
@@ -77,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hwdw_x.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="73" column="16" lean-forward="true" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+            <state relative-caret-position="1190">
+              <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
               <folding>
                 <element signature="e#115#133#0" expanded="true" />
               </folding>
@@ -86,7 +84,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/find.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -114,9 +112,9 @@
         <option value="$PROJECT_DIR$/hwdw.py" />
         <option value="$PROJECT_DIR$/try.py" />
         <option value="$PROJECT_DIR$/光电小车_ALL_1.py" />
-        <option value="$PROJECT_DIR$/jc_Camera.py" />
         <option value="$PROJECT_DIR$/point.py" />
         <option value="$PROJECT_DIR$/find.py" />
+        <option value="$PROJECT_DIR$/jc_Camera.py" />
       </list>
     </option>
   </component>
@@ -132,6 +130,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,7 +142,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,11 +168,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.find">
+  <component name="RunManager" selected="Python.jc_Camera">
     <configuration name="光电小车_ALL_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Camera" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -216,6 +217,9 @@
       <module name="Camera" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -254,6 +258,9 @@
       <module name="Camera" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -316,8 +323,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.find" />
         <item itemvalue="Python.jc_Camera" />
+        <item itemvalue="Python.find" />
         <item itemvalue="Python.point" />
         <item itemvalue="Python.光电小车_ALL_1" />
         <item itemvalue="Python.try" />
@@ -340,7 +347,9 @@
       <workItem from="1553818222537" duration="6709000" />
       <workItem from="1553920949750" duration="1478000" />
       <workItem from="1553927078571" duration="1231000" />
-      <workItem from="1553931823483" duration="11610000" />
+      <workItem from="1553931823483" duration="11656000" />
+      <workItem from="1553954878284" duration="569000" />
+      <workItem from="1553955637129" duration="415000" />
     </task>
     <task id="LOCAL-00001" summary="多线程低延迟调用摄像头">
       <created>1553756172205</created>
@@ -384,11 +393,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553927427576</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="中值滤波">
+      <created>1553949632515</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553949632515</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26863000" />
+    <option name="totallyTimeSpent" value="27893000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -402,15 +418,14 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="20" width="1550" height="851" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17269076" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17670682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="3" visible="true" weight="0.3042877" />
-      <window_info anchor="bottom" id="Python Console" order="4" sideWeight="0.49932975" weight="0.3250346" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3042877" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="4" sideWeight="0.49932975" visible="true" weight="0.3250346" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.32916668" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.50067025" side_tool="true" weight="0.25972223" />
       <window_info anchor="bottom" id="调试" order="7" weight="0.32780084" />
@@ -420,12 +435,13 @@
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.48906562" visible="true" weight="0.21218206" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.48360655" visible="true" weight="0.21218206" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.4990619" weight="0.23190348" />
-      <window_info anchor="right" x="0" y="0" width="337" height="651" id="文档" order="5" sideWeight="0.5109344" side_tool="true" visible="true" weight="0.21218206" />
+      <window_info anchor="right" x="0" y="0" width="337" height="651" id="文档" order="5" sideWeight="0.5163934" side_tool="true" visible="true" weight="0.21218206" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +453,8 @@
     <MESSAGE value="加入注释" />
     <MESSAGE value="多线程红外定位" />
     <MESSAGE value="加入参数" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入参数" />
+    <MESSAGE value="中值滤波" />
+    <option name="LAST_COMMIT_MESSAGE" value="中值滤波" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Camera$Camera.coverage" NAME="Camera Coverage Results" MODIFIED="1553756005250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
@@ -446,9 +463,19 @@
     <SUITE FILE_PATH="coverage/Camera$point.coverage" NAME="point Coverage Results" MODIFIED="1553943001859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jc_Camera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/try.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="731">
           <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -456,40 +483,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hwdw_x.py">
+    <entry file="file://$PROJECT_DIR$/hwdw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="73" column="16" lean-forward="true" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-          <folding>
-            <element signature="e#115#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jc_Camera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/光电小车_ALL_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+        <state relative-caret-position="901">
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
           <folding>
             <element signature="e#63#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hwdw.py">
+    <entry file="file://$PROJECT_DIR$/hwdw_x.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state relative-caret-position="1190">
+          <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+          <folding>
+            <element signature="e#115#133#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

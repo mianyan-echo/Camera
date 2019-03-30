@@ -1,12 +1,14 @@
 import os
 import cv2
 import gc
-from multiprocessing import Process, Manager
+import time
+from multiprocessing import Process, Manager, Lock
 
 
 # 向共享缓冲栈中写入数据:
-def write(stack, cam, top: int) -> None:
+def write(stack, cam, top: int, lock) -> None:
     """
+    :param lock: 进程锁
     :param cam: 摄像头参数
     :param stack: Manager.list对象
     :param top: 缓冲栈容量
@@ -21,14 +23,18 @@ def write(stack, cam, top: int) -> None:
             # 每到一定容量清空一次缓冲栈
             # 利用gc库，手动清理内存垃圾，防止内存溢出
             if len(stack) >= top:
-                del stack[:]
-                gc.collect()
+                with lock:
+                    print("清栈")
+                    del stack[:]
+                    gc.collect()
+                    stack.append(img)
 
 
 # 在缓冲栈中读取数据:
 def read(stack) -> None:
     print('Process to read: %s' % os.getpid())
     while True:
+        time.sleep(0.1)
         if len(stack) != 0:
             value = stack.pop()
             cv2.imshow("img", value)
@@ -40,7 +46,8 @@ def read(stack) -> None:
 if __name__ == '__main__':
     # 父进程创建缓冲栈，并传给各个子进程：
     q = Manager().list()
-    pw = Process(target=write, args=(q, "rtsp://xxx:xxx@192.168.1.102:554", 100))
+    l = Lock()
+    pw = Process(target=write, args=(q, 0, 100, l))
     pr = Process(target=read, args=(q,))
     # 启动子进程pw，写入:
     pw.start()
